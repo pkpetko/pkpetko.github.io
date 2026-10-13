@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+==============================================================================
+FILENAME: nazarick-ghpages/site/index.html
+VERSION: 1.00.00
+AUTHOR: Peter + Claude
+DATE: 2026-10-13
+LAST_MODIFIED: 2026-10-13
+CHANGES: v1.00.00 - FEATURE: home page of the "Nazarick Albedo" OAuth app
+DESCRIPTION:
+  Public home page required by Google Auth Platform (Branding -> App home
+  page) to publish the OAuth app. Describes a private, single-owner app.
+  Contains no personal data.
+USAGE:
+  Upload to the root of the <username>.github.io repository.
+==============================================================================
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nazarick Albedo</title>
+<style>
+  :root { --fg: #1d1d1f; --muted: #5f6368; --bg: #fafafa; --line: #e3e3e3; --accent: #6b1d2a; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg: #ececec; --muted: #a0a0a0; --bg: #161616; --line: #2c2c2c; --accent: #d9a1a9; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 48px 16px; }
+  h1 { margin: 0 0 4px; font-size: 1.8rem; color: var(--accent); }
+  .sub { color: var(--muted); margin: 0 0 32px; }
+  h2 { font-size: 1.1rem; margin: 32px 0 8px; border-top: 1px solid var(--line); padding-top: 24px; }
+  a { color: var(--accent); }
+  footer { margin-top: 48px; color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Nazarick Albedo</h1>
+  <p class="sub">A private, self-hosted personal assistant. Not a public service.</p>
+
+  <p>Nazarick Albedo is a personal assistant that runs entirely on hardware owned by
+  its single user. It is not offered to the public, has no other users and is not
+  sold or distributed.</p>
+
+  <h2>What it does with Google data</h2>
+  <ul>
+    <li><strong>Gmail:</strong> reads messages of the owner's own accounts on request (read-only).</li>
+    <li><strong>Google Calendar:</strong> reads events and, only after explicit confirmation by the owner, creates or changes events.</li>
+    <li><strong>Google Drive:</strong> reads files of the owner's own accounts on request (read-only).</li>
+  </ul>
+  <p>Data is processed only on the owner's own computers and is never sent to any
+  third party. Details are in the <a href="privacy.html">Privacy Policy</a>.</p>
+
+  <footer>Nazarick Albedo &middot; personal, non-commercial use &middot;
+  <a href="privacy.html">Privacy Policy</a></footer>
+</main>
+</body>
+</html>
+<!--
+==============================================================================
+========================= END OF FILE ========================================
+==============================================================================
+-->
